@@ -1,12 +1,15 @@
-﻿<section id="hero" class="hero section dark-background">
+﻿@model Slider
 
-    <img src="~/assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+
+<section id="hero" class="hero section dark-background">
+
+    <img src="~/assets/img/@Model.ImageUrl" alt="" data-aos="fade-in">
 
     <div class="container">
-        <h2 data-aos="fade-up" data-aos-delay="100">Learning Today,<br>Leading Tomorrow</h2>
-        <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p>
+        <h2 data-aos="fade-up" data-aos-delay="100">@Model.Title</h2>
+        <p data-aos="fade-up" data-aos-delay="200">@Model.Description</p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-            <a href="courses.html" class="btn-get-started">Get Started</a>
+            <a href="@Model.ButtonLink" class="btn-get-started">Get Started</a>
         </div>
     </div>
 
@@ -19,7 +22,7 @@
         <div class="row gy-4">
 
             <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-                <img src="~/assets/img/about.jpg" class="img-fluid" alt="">
+                <img src="~/assets/img/@Model.ImageUrl" class="img-fluid" alt="">
             </div>
 
             <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
@@ -247,7 +250,7 @@
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                 <div class="course-item">
-                    <img src="~/assets/img/course/course-1.webp" class="img-fluid" alt="...">
+                    <img src="~/assets/img/course/@Model.ImageUrl" class="img-fluid" alt="...">
                     <div class="course-content">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <p class="category">Web Development</p>
@@ -258,7 +261,7 @@
                         <p class="description">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                         <div class="trainer d-flex justify-content-between align-items-center">
                             <div class="trainer-profile d-flex align-items-center">
-                                <img src="~/assets/img/person/person-m-7.webp" class="img-fluid" alt="">
+                                <img src="~/assets/img/person/@Model.ImageUrl" class="img-fluid" alt="">
                                 <a href="" class="trainer-link">Antonio</a>
                             </div>
                             <div class="trainer-rank d-flex align-items-center">
@@ -273,7 +276,7 @@
 
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
                 <div class="course-item">
-                    <img src="~/assets/img/course/course-2.webp" class="img-fluid" alt="...">
+                    <img src="~/assets/img/course/@Model.ImageUrl" class="img-fluid" alt="...">
                     <div class="course-content">
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <p class="category">Marketing</p>
@@ -284,7 +287,7 @@
                         <p class="description">Et architecto provident deleniti facere repellat nobis iste. Id facere quia quae dolores dolorem tempore.</p>
                         <div class="trainer d-flex justify-content-between align-items-center">
                             <div class="trainer-profile d-flex align-items-center">
-                                <img src="~/assets/img/person/person-f-14.webp" class="img-fluid" alt="">
+                                <img src="~/assets/img/person/@Model.ImageUrl" class="img-fluid" alt="">
                                 <a href="" class="trainer-link">Lana</a>
                             </div>
                             <div class="trainer-rank d-flex align-items-center">
@@ -337,7 +340,7 @@
 
             <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
                 <div class="member">
-                    <img src="~/assets/img/trainers/trainer-1.jpg" class="img-fluid" alt="">
+                    <img src="~/assets/img/trainers/@Model.ImageUrl" class="img-fluid" alt="">
                     <div class="member-content">
                         <h4>Walter White</h4>
                         <span>Web Development</span>
@@ -356,7 +359,7 @@
 
             <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
                 <div class="member">
-                    <img src="~/assets/img/trainers/trainer-2.jpg" class="img-fluid" alt="">
+                    <img src="~/assets/img/trainers/@Model.ImageUrl" class="img-fluid" alt="">
                     <div class="member-content">
                         <h4>Sarah Jhinson</h4>
                         <span>Marketing</span>
@@ -375,7 +378,7 @@
 
             <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
                 <div class="member">
-                    <img src="~/assets/img/trainers/trainer-3.jpg" class="img-fluid" alt="">
+                    <img src="~/assets/img/trainers/@Model.ImageUrl" class="img-fluid" alt="">
                     <div class="member-content">
                         <h4>William Anderson</h4>
                         <span>Content</span>

@@ -12,7 +12,7 @@ namespace Mentor_App
             builder.Services.AddControllersWithViews();
             builder.Services
             .AddDbContext<Data.AbDbContext>(options =>
-                options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=myDataBase;Trusted_Connection=True;"));
+                options.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=myDataBase;Trusted_Connection=True; TrustServerCertificate=True;"));
 
             var app = builder.Build();
             if (!app.Environment.IsDevelopment())
