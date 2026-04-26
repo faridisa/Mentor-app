@@ -6,7 +6,7 @@
     <img src="~/assets/img/@Model.ImageUrl" alt="" data-aos="fade-in">
 
     <div class="container">
-        <h2 data-aos="fade-up" data-aos-delay="100">@Model.Title</h2>
+        <h2 data-aos="fade-up" data-aos-delay="100">@Html.Raw(Model.Title)</h2>
         <p data-aos="fade-up" data-aos-delay="200">@Model.Description</p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
             <a href="@Model.ButtonLink" class="btn-get-started">Get Started</a>
